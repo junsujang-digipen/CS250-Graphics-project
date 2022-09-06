@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{e728923a-bf73-4620-82d7-9992cef0ed48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{dacfc2b1-be7e-4e39-b8ae-46034350b622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicEngine">
+      <UniqueIdentifier>{78f6e24e-9053-45e7-89e7-b7adcf7d504f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicEngine\Header">
+      <UniqueIdentifier>{5153d84c-7f6c-4aa5-8322-501d49795682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicEngine\Source">
+      <UniqueIdentifier>{1ecafa10-3f0e-469b-9dea-ba2f53cf6963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Imgui">
+      <UniqueIdentifier>{83466b26-1930-4e97-9b1c-e431bd930394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e4048e9e-8818-4c1d-a31a-55a5ed819284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{bea743bf-b916-42bd-a68d-4f86536917cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\tess">
+      <UniqueIdentifier>{9829eb45-f665-42b0-9ec9-28ceb0ae0f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Shadow">
+      <UniqueIdentifier>{555622de-4bd6-4b54-ae31-101896065393}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\GraphicEngine.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\glslshader.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Shader.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Uniform.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Mesh.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Model.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Function.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_demo.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_draw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_impl_opengl3.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_tables.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_widgets.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\include\Imgui\imgui_impl_glfw.cpp">
+      <Filter>Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ToonAndFogScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\DefaultMesh.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Camera.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicEngine\Noise.cpp">
+      <Filter>GraphicEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\NoiseScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HermiteScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Catmull-romScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GeometryScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TessScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\FogWorldScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ShadowScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ExtraScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\HelloTriangle.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\HelloTriangle.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\Color.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\3Dmodel.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\3Dmodel.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\toonShdr.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\toonShdr.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\NoiseShdr.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\NoiseShdr.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\textureShdr.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\textureShdr.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoTestShdr.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoTestShdr.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoTestShdr.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoSmokeShdr.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoSmokeShdr.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoSmokeShdr.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoExplosion.frag">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoExplosion.geom">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\GeoExplosion.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shaders\tessTestShdr.tesc">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\tessTestShdr.tese">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\tessTestShdr.vert">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\tessTestShdr.frag">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\tessTestShdr.geom">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\tessAndGrassShdr.geom">
+      <Filter>Shader\tess</Filter>
+    </None>
+    <None Include="..\shaders\Shadow.vert">
+      <Filter>Shader\Shadow</Filter>
+    </None>
+    <None Include="..\shaders\Shadow.frag">
+      <Filter>Shader\Shadow</Filter>
+    </None>
+    <None Include="..\shaders\Shadow_explosion.frag">
+      <Filter>Shader\Shadow</Filter>
+    </None>
+    <None Include="..\shaders\Shadow_explosion.geom">
+      <Filter>Shader\Shadow</Filter>
+    </None>
+    <None Include="..\shaders\Shadow_explosion.vert">
+      <Filter>Shader\Shadow</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphicEngine\GraphicEngine.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\glslshader.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Model.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Shader.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Uniform.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Mesh.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Function.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_glfw.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_opengl3.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui_internal.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui_stdlib.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imstb_rectpack.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imstb_textedit.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imstb_truetype.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imconfig.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ToonAndFogScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\DefaultMesh.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Camera.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicEngine\Noise.h">
+      <Filter>GraphicEngine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\NoiseScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HermiteScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Catmull-romScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GeometryScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TessScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\FogWorldScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ShadowScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ExtraScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

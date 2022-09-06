@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2a805913-dabf-4986-8921-7bf77b0ed000}</ProjectGuid>
+    <RootNamespace>Explosion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\prop-pages\opengl-glfw-glew-glm-stb-imgui.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\prop-pages\opengl-glfw-glew-glm-stb-imgui.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\include\Imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="GraphicEngine\Camera.cpp" />
+    <ClCompile Include="GraphicEngine\DefaultMesh.cpp" />
+    <ClCompile Include="GraphicEngine\Function.cpp" />
+    <ClCompile Include="GraphicEngine\glslshader.cpp" />
+    <ClCompile Include="GraphicEngine\GraphicEngine.cpp" />
+    <ClCompile Include="GraphicEngine\Mesh.cpp" />
+    <ClCompile Include="GraphicEngine\Model.cpp" />
+    <ClCompile Include="GraphicEngine\Noise.cpp" />
+    <ClCompile Include="GraphicEngine\Shader.cpp" />
+    <ClCompile Include="GraphicEngine\Uniform.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\lib\include\Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Scene\Catmull-romScene.cpp" />
+    <ClCompile Include="Scene\ExtraScene.cpp" />
+    <ClCompile Include="Scene\FogWorldScene.cpp" />
+    <ClCompile Include="Scene\GeometryScene.cpp" />
+    <ClCompile Include="Scene\HermiteScene.cpp" />
+    <ClCompile Include="Scene\NoiseScene.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Scene\ShadowScene.cpp" />
+    <ClCompile Include="Scene\TessScene.cpp" />
+    <ClCompile Include="Scene\TestScene.cpp" />
+    <ClCompile Include="Scene\ToonAndFogScene.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\Color.frag" />
+    <None Include="..\shaders\GeoExplosion.frag" />
+    <None Include="..\shaders\GeoExplosion.geom" />
+    <None Include="..\shaders\GeoExplosion.vert" />
+    <None Include="..\shaders\GeoSmokeShdr.frag" />
+    <None Include="..\shaders\GeoSmokeShdr.geom" />
+    <None Include="..\shaders\GeoSmokeShdr.vert" />
+    <None Include="..\shaders\GeoTestShdr.frag" />
+    <None Include="..\shaders\GeoTestShdr.geom" />
+    <None Include="..\shaders\GeoTestShdr.vert" />
+    <None Include="..\shaders\HelloTriangle.frag" />
+    <None Include="..\shaders\HelloTriangle.vert" />
+    <None Include="..\shaders\3Dmodel.frag" />
+    <None Include="..\shaders\3Dmodel.vert" />
+    <None Include="..\shaders\NoiseShdr.frag" />
+    <None Include="..\shaders\NoiseShdr.vert" />
+    <None Include="..\shaders\Shadow.frag" />
+    <None Include="..\shaders\Shadow.vert" />
+    <None Include="..\shaders\Shadow_explosion.frag" />
+    <None Include="..\shaders\Shadow_explosion.geom" />
+    <None Include="..\shaders\Shadow_explosion.vert" />
+    <None Include="..\shaders\tessAndGrassShdr.geom" />
+    <None Include="..\shaders\tessTestShdr.frag" />
+    <None Include="..\shaders\tessTestShdr.geom" />
+    <None Include="..\shaders\tessTestShdr.tesc" />
+    <None Include="..\shaders\tessTestShdr.tese" />
+    <None Include="..\shaders\tessTestShdr.vert" />
+    <None Include="..\shaders\textureShdr.frag" />
+    <None Include="..\shaders\textureShdr.vert" />
+    <None Include="..\shaders\toonShdr.frag" />
+    <None Include="..\shaders\toonShdr.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphicEngine\Camera.h" />
+    <ClInclude Include="GraphicEngine\DefaultMesh.h" />
+    <ClInclude Include="GraphicEngine\Function.h" />
+    <ClInclude Include="GraphicEngine\glslshader.h" />
+    <ClInclude Include="GraphicEngine\GraphicEngine.h" />
+    <ClInclude Include="GraphicEngine\Mesh.h" />
+    <ClInclude Include="GraphicEngine\Model.h" />
+    <ClInclude Include="GraphicEngine\Noise.h" />
+    <ClInclude Include="GraphicEngine\Shader.h" />
+    <ClInclude Include="GraphicEngine\Uniform.h" />
+    <ClInclude Include="..\lib\include\Imgui\imconfig.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui_internal.h" />
+    <ClInclude Include="..\lib\include\Imgui\imgui_stdlib.h" />
+    <ClInclude Include="..\lib\include\Imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\lib\include\Imgui\imstb_textedit.h" />
+    <ClInclude Include="..\lib\include\Imgui\imstb_truetype.h" />
+    <ClInclude Include="Scene\Catmull-romScene.h" />
+    <ClInclude Include="Scene\ExtraScene.h" />
+    <ClInclude Include="Scene\FogWorldScene.h" />
+    <ClInclude Include="Scene\GeometryScene.h" />
+    <ClInclude Include="Scene\HermiteScene.h" />
+    <ClInclude Include="Scene\NoiseScene.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneManager.h" />
+    <ClInclude Include="Scene\ShadowScene.h" />
+    <ClInclude Include="Scene\TessScene.h" />
+    <ClInclude Include="Scene\TestScene.h" />
+    <ClInclude Include="Scene\ToonAndFogScene.h" />
+    <ClInclude Include="src\Entity.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\Window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
